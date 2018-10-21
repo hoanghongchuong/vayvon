@@ -160,10 +160,10 @@ class IndexController extends Controller {
 	{
 
 		$news_detail = DB::table('news_categories')->select()->where('status',1)->where('com','tin-tuc')->where('alias',$id)->get()->first();
-		$cateNews = DB::table('news_categories')->where('com','tin-tuc')->get();
+		
 		if(!empty($news_detail)){
 						
-			
+		$categories = DB::table('news_categories')->where('parent_id', '<>',0)->get();	
 			$sameCate = DB::table('news_categories')->where('parent_id','=',$news_detail->parent_id)->where('com','tin-tuc')->get();
 			$com='tin-tuc';
 			$setting = Cache::get('setting');
@@ -177,7 +177,7 @@ class IndexController extends Controller {
 			$description = $news_detail->description;
 			$img_share = asset('upload/news/'.$news_detail->photo);
 
-			return view('templates.news_detail_tpl', compact('news_detail','com','cateNews','sameCate','keyword','description','title','img_share'));
+			return view('templates.news_detail_tpl', compact('news_detail','com','cateNews','sameCate','keyword','description','title','img_share','categories'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}

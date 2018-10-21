@@ -17,6 +17,7 @@
             <li><a href="backend/news?type=the-chap"><i class="fa fa-circle-o"></i> <span>Vay thế chấp</span></a></li>
           </ul>
         </li> -->
+        <li><a href="backend/orders"><i class="fa fa-circle-o"></i> <span>Quản lý đăng ký</span></a></li>
         <li><a href="backend/newscate?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Quản lý loại giao dịch</span></a></li>
         <!-- <li><a href="backend/news?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Quản lý tin tức</span></a></li>         -->
         

@@ -9,7 +9,7 @@ class Order extends Model
     protected $table = "orders";
 
     protected $fillable = [
-    	'name','phone','brithday','address','name_company','cate_id','money','baohiem','type','status'
+    	'name','phone','birthday','address','name_company','cate_id','money','baohiem','type','status'
     ]; 
 
     public function getFieldList()

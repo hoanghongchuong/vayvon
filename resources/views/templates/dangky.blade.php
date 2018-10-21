@@ -35,7 +35,7 @@
 								<label class="py-3" for="">Họ tên</label>
 								<input type="text" class="form-control" name="name" placeholder="Họ tên" required="required">
 								<label class="py-3" for="">Ngày sinh</label>
-								<input type="date" class="form-control" name="brithday" placeholder="Ngày sinh" required="required">
+								<input type="date" class="form-control" name="birthday" placeholder="Ngày sinh" required="required">
 								<label class="py-3" for="">Số điện thoại</label>
 								<input type="tel" class="form-control" name="phone" placeholder="Số điện thoại" required="required">
 								<label class="py-3" for="">Địa chỉ nơi công tác</label>
