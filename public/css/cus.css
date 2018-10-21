@@ -1,0 +1,48 @@
+.sloganx{
+	text-align: center;
+	/*margin-top: 40px;*/
+	margin-bottom: 50px;
+	padding-top: 90px; padding-bottom: 90px;
+	
+}
+.sloganx h2{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #FFCC00;
+}
+.btn-register{
+	font-size: 23px;
+}
+.submenux a{
+	font-size: 14px;
+}
+.form-group{
+	margin-bottom: 0px !important;
+}
+.name-vay{
+	font-size: 26px;
+	/*font-weight: bold;*/
+	color: #000;
+}
+.dv-title{
+	font-size: 24px;
+	color: #000;
+}
+.cate-service{
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.cate-service li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.cate-service li a{
+	color: #444444;
+	font-size: 16px;	
+}
+.cate-service li.active a{
+	color: #000;
+	font-weight: bold;
+}
