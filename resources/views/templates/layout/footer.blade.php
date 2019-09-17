@@ -15,7 +15,7 @@
         <div class="partner-slider owl-carousel slider-general">
             @foreach($brands as $brand)
             <div class="item">
-                <a href="{{ $brand->url }}" title="" class="zoom"><img src="{{ asset('upload/banner/'.$brand->photo) }}" alt="" title=""> </a>
+                <a href="{{ $brand->url }}" title="" class="zoom"><img src="{{ asset('upload/banner/'.$brand->photo) }}" class="" alt="" title=""> </a>
             </div>
             @endforeach
         </div>
@@ -26,9 +26,9 @@
         <div class="ft-1">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
-                    <div class="text-lg-left text-center"><a href="{{url('')}}" title=""><img src="{{asset('upload/hinhanh/'.$setting->photo)}}" title="" alt=""></a></div>
+                    <div class="text-lg-left text-center"><a href="{{url('')}}" title=""><img src="{{asset('upload/hinhanh/'.$setting->photo)}}" title="" alt="" class="img-footer"></a></div>
                     <div class="ft-cap">
-                        Chúng tôi vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rối nghĩa dễ gây rối trí và cảm trở công việc tập trung vào yếu tố trình bày văn bản.
+                        {!! $setting->fax !!}
                     </div>
                     
                 </div>
@@ -41,7 +41,7 @@
                         <li><a href="{{url('gioi-thieu')}}" title="">Giới thiệu</a></li>
                         
                         <!-- <li><a href="thanhtoan.html" title="">Thanh toán khoản vay</a></li> -->
-                        <li><a href="{{url('tuyen-dung')}}" title="">Tuyển dụng</a></li>
+                        <li><a href="{{url('vay-tieu-dung')}}" title="">Vay tiêu dùng</a></li>
                         <li><a href="{{url('lien-he')}}" title="">Liên hệ</a></li>
                     </ul>
                     
@@ -74,7 +74,7 @@
         
     </div>
     <div class="b2 s12 text-center ft-last">
-        © <a href="" title=""></a> 2018. All rights reserved.
+        © <a href="" title=""></a> 2019. All rights reserved.
     </div>
 </footer>
 

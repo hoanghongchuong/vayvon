@@ -20,11 +20,12 @@
         <li><a href="backend/orders"><i class="fa fa-circle-o"></i> <span>Quản lý đăng ký</span></a></li>
         <li><a href="backend/newscate?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Quản lý loại giao dịch</span></a></li>
         <!-- <li><a href="backend/news?type=tin-tuc"><i class="fa fa-circle-o"></i> <span>Quản lý tin tức</span></a></li>         -->
+        <li><a href="backend/about/edit?type=gioi-thieu"><i class="fa fa-circle-o"></i> <span>Giới thiệu</span></a></li> 
+        <li><a href="backend/about/edit?type=uu-dai"><i class="fa fa-circle-o"></i> <span>Vay mua oto</span></a></li>        
+        <li><a href="backend/about/edit?type=mua-nha"><i class="fa fa-circle-o"></i> <span>Vay mua nhà</span></a></li>        
+         
         
-        <li><a href="backend/about/edit?type=uu-dai"><i class="fa fa-circle-o"></i> <span>Ưu đãi cho vay</span></a></li>        
-        <li><a href="backend/about/edit?type=gioi-thieu"><i class="fa fa-circle-o"></i> <span>Giới thiệu</span></a></li>  
-        
-        <li><a href="backend/about/edit?type=tuyen-dung"><i class="fa fa-circle-o"></i> <span>Tuyển dụng</span></a></li>
+        <li><a href="backend/about/edit?type=tuyen-dung"><i class="fa fa-circle-o"></i> <span>Vay tiêu dùng</span></a></li>
         <li><a href="backend/partner"><i class="fa fa-circle-o"></i> <span>Quản lý đối tác</span></a></li>
         <li><a href="backend/feedback"><i class="fa fa-gear" aria-hidden="true"></i> <span>Ý kiến khách hàng</span></a></li>
         <li><a href="backend/lienket?type=taisao"><i class="fa fa-gear" aria-hidden="true"></i> <span>Tại sao chọn chúng tôi</span></a></li>

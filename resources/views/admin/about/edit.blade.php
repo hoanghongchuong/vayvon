@@ -34,22 +34,22 @@
 	                  	<div class="tab-pane active" id="tab_1">
 	                  		<div class="row">
 		                  		<div class="col-md-6 col-xs-12">
-									@if($_GET['type']=='gioi-thieu')
+									@if($_GET['type']=='gioi-thieu' || $_GET['type']=='uu-dai' || $_GET['type']=='mua-nha')
 							    	<div class="form-group">
 								      	<label for="ten">Tên</label>
 								      	<input type="text" name="txtName" id="txtName" value="{{ @$data->name }}"  class="form-control" />
 									</div>
+									@endif
 									
 									
-									
-									<div class="form-group @if ($errors->first('txtAlias')!='') has-error @endif">
+									<div class="form-group @if ($errors->first('txtAlias')!='') has-error @endif hidden">
 								      	<label for="alias">Đường dẫn tĩnh</label>
 								      	<input type="text" name="txtAlias" id="txtAlias" value="{{ @$data->alias }}"  class="form-control" />
 								      	@if ($errors->first('txtAlias')!='')
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtAlias'); !!}</label>
 								      	@endif
 									</div>
-									@endif
+									
 								</div>
 								<input type="hidden" name="txtCom" value="{{ old('txtCom', isset($data) ? @$data->com : null) }}">
 								<div class="clearfix"></div>

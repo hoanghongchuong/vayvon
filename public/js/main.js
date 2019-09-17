@@ -46,6 +46,7 @@ $(document).ready(function($){
   }
 
   $("#menu").mmenu({
+    "slidingSubmenus": false,
     "extensions": [
           "pagedim-black",
           "shadow-panels"

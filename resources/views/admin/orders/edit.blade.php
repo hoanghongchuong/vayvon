@@ -31,24 +31,14 @@
 								      	<label for="ten">Tên</label>
 								      	<input type="text" name="name" id="txtName" value="{{ $data->name }}"  class="form-control" />								      	
 									</div>
-									<div class="form-group">
+									<!-- <div class="form-group">
 								      	<label for="alias">Ngày sinh</label>
 								      	<input type="text" name="birthday" id="" value="{{ date('d/m/Y', strtotime($data->birthday)) }}"  class="form-control" />
-									</div>									
+									</div>	 -->								
 									<div class="form-group">
 								      	<label for="desc">Số điện thoại</label>
 								      	<input type="text" name="phone" id="" value="{{ $data->phone }}"  class="form-control" />
 									</div>
-									<div class="form-group">
-								      	<label for="desc">Nơi công tác</label>
-								      	<input type="text" name="name_company" id="" value="{{ $data->name_company }}"  class="form-control" />
-									</div>
-									<div class="form-group">
-								      	<label for="desc">Địa chỉ nơi công tác</label>
-								      	<input type="text" name="address" id="" value="{{ $data->address }}"  class="form-control" />
-									</div>
-								</div>
-								<div class="col-md-6 col-xs-12">
 									<div class="form-group ">
 								      	<label for="ten">Loại giao dịch</label>
 								      	<select name="cate_id" class="form-control">
@@ -61,6 +51,17 @@
 								      	<label for="desc">Thu nhập</label>
 								      	<input type="text" name="money" id="" value="{{ $money }}"  class="form-control" />
 									</div>
+									<!-- <div class="form-group">
+								      	<label for="desc">Nơi công tác</label>
+								      	<input type="text" name="name_company" id="" value="{{ $data->name_company }}"  class="form-control" />
+									</div>
+									<div class="form-group">
+								      	<label for="desc">Địa chỉ nơi công tác</label>
+								      	<input type="text" name="address" id="" value="{{ $data->address }}"  class="form-control" />
+									</div> -->
+								</div>
+								<div class="col-md-6 col-xs-12">
+									
 									<div class="form-group">
 								      	<label for="desc">Đóng bảo hiểm</label>
 								      	<input type="text" name="baohiem" id="" value="@if($data->baohiem == 0) Có @elseif($data->baohiem == 1) Không @endif"  class="form-control" />

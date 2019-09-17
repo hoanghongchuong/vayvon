@@ -80,15 +80,16 @@ class IndexController extends Controller {
 	public function getTuyenDung()
 	{
 		$about = DB::table('about')->where('com','tuyen-dung')->first();
-        $com = 'tuyen-dung';		
+        $com = 'tuyen-dung';
+        $title = 'Vay tiêu dùng';
 		 //Cấu hình SEO
-		if(!empty($about->title)){
-			$title = $about->title;
-		}else{
-			$title = $about->name;
-		}
-		$keyword = $about->keyword;
-		$description = $about->description;
+		// if(!empty($about->title)){
+		// 	$title = $about->title;
+		// }else{
+		// 	$title = $about->name;
+		// }
+		// $keyword = $about->keyword;
+		// $description = $about->description;
 		// End cấu hình SEO
 
 		return view('templates.tuyendung', compact('about','slider_about','banner_danhmuc','keyword','description','title','img_share','com'));
@@ -111,7 +112,23 @@ class IndexController extends Controller {
 		return view('templates.uudai', compact('about','keyword','description','title','img_share','com'));
 
 	}
-	
+	public function muaNha()
+	{
+		$about = DB::table('about')->where('com','mua-nha')->first();
+
+        $com = 'mua-nha';		
+		 //Cấu hình SEO
+		if(!empty($about->title)){
+			$title = $about->title;
+		}else{
+			$title = $about->name;
+		}
+		$keyword = $about->keyword;
+		$description = $about->description;
+		// End cấu hình SEO
+
+		return view('templates.muanha', compact('about','keyword','description','title','com'));
+	}
 
 	public function getNews()
 	{

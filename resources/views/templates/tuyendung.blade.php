@@ -5,7 +5,7 @@
         <div class="container">
             <ul class="list-unstyled s12 bread">
                 <li><a href="{{ url('') }}" title="">Trang chủ</a></li>
-                <li>Tuyển dụng</li>
+                <li>Vay tiêu dùng</li>
             </ul>
         </div>
     </section>
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="sbold s24 py-md-4 pt-2 pb-3 t5 tt-tit">Tuyển dụng</h1>
+                    <h1 class="sbold s24 py-md-4 pt-2 pb-3 t5 tt-tit">Vay tiêu dùng</h1>
                     <div class="s15 t6 about-content">
                         {!! @$about->content !!}
                     </div>

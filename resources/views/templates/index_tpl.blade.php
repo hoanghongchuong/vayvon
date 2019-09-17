@@ -6,11 +6,11 @@
         
     </section> -->
     <!-- slider-area-end -->
-    <section class="sloganx" style="background: url('./public/images/slider.jpg');">
+    @include('templates.layout.slider')
+    <!-- <section class="sloganx" style="background: url('./public/images/slider.jpg');">
         <h2 class=" text-uppercase">Hãy đăng ký để nhận được sự hỗ trợ tốt nhất</h2>
         <a href="{{ url('dang-ky') }}" class="btn btn-register btn-success">Đăng ký ngay</a>
-        <!-- <button type="button" class="btn btn-register btn-success">Đăng ký ngay</button> -->
-    </section>
+    </section> -->
     <section class="hd">
         <div class="container">
             <h2 class="medium s30 text-center hd-tit wow">Các bước để nhận và thanh toán khoản vay</h2>

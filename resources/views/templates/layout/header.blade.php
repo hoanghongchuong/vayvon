@@ -18,10 +18,10 @@
             </div>
             <div class="d-flex align-items-center tmenu-r">
                 <!-- menu -->
-                <nav id="menu" class="menu-wrap">   
+                <nav id="menu" class="menu-wrap" style="z-index: 999">   
                     <ul class="menu">
                         <li class="@if(@$com == 'index')active @endif"><a href="{{url('')}}" title="">Trang chủ</a></li>
-                        <li class="@if(@$com == 'gioi-thieu')active @endif"><a href="{{ url('gioi-thieu') }}" title="">Về chúng tôi</a></li>
+                        <li class="@if(@$com == 'gioi-thieu')active @endif"><a href="{{ url('gioi-thieu') }}" title="">Giới thiệu</a></li>
                         @foreach($categories as $cate)
                         <li><a href="javascript:;" title="">{{$cate->name}}</a>
                             <?php $cateChilds = DB::table('news_categories')->where('parent_id', $cate->id)->get(); ?>
@@ -33,15 +33,15 @@
                             </ul>
                         </li>
                         @endforeach
-                        <li class="@if(@$com == 'uu-dai')active @endif"><a href="{{ url('uu-dai-cho-vay') }}" title="">Ưu đãi cho vay</a></li>
-                        <li class="@if(@$com == 'dang-ky')active @endif"><a href="{{url('dang-ky')}}" title="">Đăng ký trực tuyến</a></li>
-                        <li class="@if(@$com == 'tuyen-dung')active @endif"><a href="{{url('tuyen-dung')}}" title="">Tuyển dụng</a></li>
+                        <li class="@if(@$com == 'uu-dai')active @endif"><a href="{{ url('vay-mua-oto') }}" title="">Vay mua ô tô</a></li>
+                        <li class="@if(@$com == 'mua-nha')active @endif"><a href="{{url('vay-mua-nha')}}" title="">Vay mua nhà</a></li>
+                        <li class="@if(@$com == 'tuyen-dung')active @endif"><a href="{{url('vay-tieu-dung')}}" title="">Vay tiêu dùng</a></li>
                         <li class="@if(@$com == 'lien-he')active @endif"><a href="{{ url('lien-he') }}" title="">Liên hệ</a></li>
                     </ul>
                 </nav>
                 
                 <div class="menu-b">
-                    <h2 class="sbold t3 s38 text-uppercase slogan">"Thật tiện lợi - thật tuyệt vời"</h2>
+                    <h2 class="sbold t3 s38 text-uppercase slogan">"HOTLINE: 0936 420 000"</h2>
                 </div>
             </div>
         </div>

@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/jquery.mmenu.all.css')}}">
     <link rel="stylesheet" href="{{ asset('public/css/jquery.mmenu.shadows.css')}}">
+    <link rel="stylesheet" href="{{ asset('public/css/mmenu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/slick-theme.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/animate.css')}}">
@@ -71,6 +72,16 @@
             }
         }
     </style>
+
+    <script src="{{ asset('public/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('public/js/mmenu.js')}}"></script>
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                // new Mmenu( "#menu" );
+            }
+        );
+    </script>
 </head>
 <body>
        
@@ -78,10 +89,11 @@
     @yield('content')
     @include('templates.layout.footer')
   
-    <script src="{{ asset('public/js/jquery.min.js')}}"></script>
+    
     <script src="{{ asset('public/js/jquery.mmenu.min.all.js')}}"></script>
     <script src="{{ asset('public/js/owl.carousel.min.js')}}"></script>
     <script src="{{ asset('public/js/popper.min.js')}}"></script>
+    
     <script src="{{ asset('public/js/bootstrap.min.js')}}"></script>
     <script src="{{ asset('public/js/wow.min.js')}}"></script>
     <script src="{{ asset('public/js/slick.min.js')}}"></script>
@@ -93,6 +105,7 @@
     {!! $setting->codechat !!}
     {{ $setting->analytics }}
     @yield('script')
+    
     
 </body>
 </html>

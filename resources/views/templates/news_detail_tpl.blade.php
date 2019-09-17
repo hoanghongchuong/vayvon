@@ -59,19 +59,19 @@
 
                                 <label class="py-3" for="">Họ tên</label>
                                 <input type="text" class="form-control" name="name" placeholder="Họ tên" required="required">
-                                <label class="py-3" for="">Ngày sinh</label>
-                                <input type="date" class="form-control" name="birthday" placeholder="Ngày sinh" required="required">
+                                <!-- <label class="py-3" for="">Ngày sinh</label>
+                                <input type="date" class="form-control" name="birthday" placeholder="Ngày sinh" required="required"> -->
                                 <label class="py-3" for="">Số điện thoại</label>
                                 <input type="tel" class="form-control" name="phone" placeholder="Số điện thoại" required="required">
-                                <label class="py-3" for="">Địa chỉ nơi công tác</label>
-                                <input type="text" class="form-control" name="address" placeholder="Địa chỉ" required="required">
+                                <!-- <label class="py-3" for="">Địa chỉ nơi công tác</label>
+                                <input type="text" class="form-control" name="address" placeholder="Địa chỉ" required="required"> -->
                                 
                             </div>
 
                             <div class="col-sm-6">
 
-                                <label class="py-3" for="">Tên đầy đủ ơi công tác</label>
-                                <input type="text" class="form-control" name="name_company" placeholder="Tên nơi công tác" required="required">
+                                <!-- <label class="py-3" for="">Tên đầy đủ ơi công tác</label>
+                                <input type="text" class="form-control" name="name_company" placeholder="Tên nơi công tác" required="required"> -->
                                 <div class="form-group">
                                     <label class="py-3" for="">Tổng thu nhập hàng tháng</label>
                                     <select name="money" class="form-control" required="">

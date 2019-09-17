@@ -15,7 +15,8 @@
 
 Route::get('/', ['as'=>'index', 'uses'=>'IndexController@index']);
 Route::get('gioi-thieu',['as'=>'getAbout', 'uses'=>'IndexController@getAbout']);
-Route::get('uu-dai-cho-vay', 'IndexController@uuDai');
+Route::get('vay-mua-oto', 'IndexController@uuDai');
+Route::get('vay-mua-nha', 'IndexController@muaNha');
 
 Route::get('lien-he',['as'=>'getContact', 'uses'=>'ContactController@getContact']);
 Route::post('lien-he',['as'=>'postContact', 'uses'=>'ContactController@postContact']);
@@ -24,7 +25,7 @@ Route::get('tin-tuc',['as'=>'getNews', 'uses'=>'IndexController@getNews']);
 Route::get('post/{id}.html',['as'=>'getNewsDetail', 'uses'=>'IndexController@getNewsDetail']);
 Route::get('tin-tuc/{id}',['as'=>'getListNews', 'uses'=>'IndexController@getListNews']);
 
-Route::get('tuyen-dung',['as'=>'getNews', 'uses'=>'IndexController@getTuyenDung']);
+Route::get('vay-tieu-dung',['as'=>'getNews', 'uses'=>'IndexController@getTuyenDung']);
 Route::get('tuyen-dung/{id}.html',['as'=>'getNewsDetail', 'uses'=>'IndexController@getNewsTuyenDungDetail']);
 
 Route::get('dang-ky', 'IndexController@register');

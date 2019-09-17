@@ -24,10 +24,11 @@
 				               
 				                <th class="text-center with_dieuhuong">Stt</th>               
 				              	<th>Tên</th>
-				              	<th>Ngày sinh</th>
+				              	<!-- <th>Ngày sinh</th> -->
 				              	<th>Số điện thoại</th>
-				              	<th>Nơi công tác</th>
-				              	<th>Địa chỉ</th>
+				              	<th>Trạng thái</th>
+				              	<!-- <th>Nơi công tác</th> -->
+				              	<!-- <th>Địa chỉ</th> -->
 				              	<!-- <th>Loại giao dịch</th> -->
 				              	<!-- <th>Tổng thu nhập</th>
 				              	<th>Đóng bảo hiểm y tế</th>
@@ -42,10 +43,11 @@
 			             	<tr>
 			             		<td>{{ $k+1 }}</td>
 			             		<td>{{ $item->name }}</td>
-			             		<td>{{ date('d/m/Y', strtotime($item->birthday)) }}</td>			             		
+			             		<!-- <td>{{ date('d/m/Y', strtotime($item->birthday)) }}</td>			             		 -->
 			             		<td>{{ $item->phone }}</td>
-			             		<td>{{ $item->name_company }}</td>
-			             		<td>{{ $item->address }}</td>
+			             		<td>@if($item->status == 0) Chưa xử lý @else Đã xử lý @endif</td>
+			             		<!-- <td>{{ $item->name_company }}</td> -->
+			             		<!-- <td>{{ $item->address }}</td> -->
 			             		<td><a href="{{ route('admin.order.getEdit', $item->id) }}">Chi tiết</a></td>
 			             		<td><a href="{{ route('admin.order.getDelete', $item->id) }}">Xóa</a></td>
 			             	</tr>

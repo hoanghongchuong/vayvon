@@ -170,7 +170,8 @@ body {
 }
 /* color */
 .t1 {
-  color: #4e9748;
+  color: #1486d1;
+  /*color: #4e9748;*/
 }
 .t2 {
   color: #707070;
@@ -189,7 +190,8 @@ body {
 }
 /* background */
 .b1 {
-  background: #252525;
+  background: #1486d1;
+  /*background: #252525;*/
 }
 .b2 {
   background: #2b2a29;
@@ -205,6 +207,9 @@ body {
     .container-flush {
       width: 100%;
     }
+    .img-footer {
+      width: 40%;
+  }
 }
 
 .row>div[class*="col"],
@@ -252,6 +257,7 @@ body {
 .bread li a, .bread {
   color: #000;
   font-size: 14px;
+  margin-top: 20px;
 }
 /* pagi */
 .pagi {
@@ -337,7 +343,7 @@ input.form-control:focus, input:focus, textarea:focus, textarea.form-control:foc
     }
     .menu-wrap .menu > li {
       list-style: none;
-      padding: 0 17px; 
+      padding: 0 13px; 
       position: relative;
     }
     .menu-wrap .menu > li {
@@ -368,7 +374,7 @@ input.form-control:focus, input:focus, textarea:focus, textarea.form-control:foc
           position: absolute;
           top: 100%;
           left: 0;
-          background: #000;
+          background: #1486d1;
           transform: translateY(1em);
           visibility: hidden;
           /*box-shadow: 0 2px 18px rgba(0,0,0,.15);*/
@@ -382,7 +388,7 @@ input.form-control:focus, input:focus, textarea:focus, textarea.form-control:foc
         .menu-wrap .menu > li > ul li a {
           white-space: nowrap;
           display: block;
-          color: #b7b7b7;
+          color: #fff;
           padding: 10px 24px;
         }
         .menu-wrap .menu > li > ul li:hover {
@@ -709,7 +715,7 @@ span[class*='js-irs'] {
   min-width: 150px;
 }
 .regis-btn {
-  background: #4e9748;
+  background: #1486d1 !important;
   padding: 14px 20px;
   box-shadow: 3px 0 5px rgba(0,0,0,.31);
   overflow: hidden;
@@ -726,7 +732,7 @@ span[class*='js-irs'] {
   box-shadow: 3px 0 5px rgba(0,0,0,.31);
 }
 .regis-btn:hover {
-  background: #84c341;
+  background: #1486d1;
   color: #111;
 }
 .why-item {
@@ -755,7 +761,7 @@ span[class*='js-irs'] {
   top: -15px;
 }
 .tes-tit:before {
-  background: #4e9748;
+  background: #1486d1;
   top: 55px;
 }
 .tes-tit {
@@ -785,14 +791,15 @@ span[class*='js-irs'] {
 }
 /* footer */
 .ft-1 {
-  padding: 45px 0px 85px;
+  padding: 45px 0px 15px;
 }
 .ft-add .svg-inline--fa {
   width: 14px;
   margin-right: 15px;
 }
 .ft-1, .ft-1 a {
-  color: #b7b7b7;
+  color: #fff;
+  /*color: #b7b7b7;*/
 }
 .ft-tit {
   color: #fff;
@@ -929,7 +936,7 @@ span[class*='js-irs'] {
   padding-bottom: 30px;
 }
 .regis-frm input, .contact-frm input {
-  height: 40px;
+  height: 38px;
   margin-bottom: 5px;
   font-size: 14px;
 }
